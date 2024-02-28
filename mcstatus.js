@@ -91,18 +91,7 @@ function mcPlayersToHTML(playersRaw) {
     count.appendChild(document.createTextNode("Players: " + playersRaw["online"] + "/" + playersRaw["max"]));
     root.appendChild(count);
 
-    var list = document.createElement("ul");
-    list.classList.add("mc-players-list");
 
-    if (playersRaw.hasOwnProperty("sample")) {
-        playersRaw["sample"].forEach(function(player, index) {
-            var li = document.createElement("li");
-            li.appendChild(document.createTextNode(player["name"]));
-            list.appendChild(li);
-        });
-    }
-
-    root.appendChild(list);
 
     return root;
 }
