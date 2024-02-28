@@ -55,19 +55,19 @@
 }
 
 .mc-players {
-    color: inherit;
+    color: transparent;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
 .mc-players-count {
-    color: inherit;
+    color: transparent;
     margin: 0;
 }
 
 .mc-players-list {
-    color: inherit;
+    color: transparent;
     list-style-type: none;
     padding: 0;
     margin-left: 4ch;
@@ -75,7 +75,7 @@
 }
 
 .mc-players-list > li {
-    color: inherit;
+    color: transparent;
     display: inline;
 }
 
