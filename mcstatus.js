@@ -82,19 +82,7 @@ function mcDescriptionToHTML(descriptionRaw) {
     return root;
 }
 
-function mcPlayersToHTML(playersRaw) {
-    var root = document.createElement("div");
-    root.classList.add("mc-players");
 
-    var count = document.createElement("p");
-    count.classList.add("mc-players-count");
-    count.appendChild(document.createTextNode("Players: " + playersRaw["online"] + "/" + playersRaw["max"]));
-    root.appendChild(count);
-
-
-
-    return root;
-}
 
 function mcHandleStatus(parent, server, code, status) {
     var root = document.createElement("div");
@@ -123,12 +111,8 @@ function mcHandleStatus(parent, server, code, status) {
     var description = mcDescriptionToHTML(descriptionRaw);
     root.appendChild(description);
 
-    // Player Status:
-    if (code == 200) {
-        var playersRaw = status["players"];
-        var players = mcPlayersToHTML(playersRaw);
-        root.appendChild(players);
-    }
+
+
 
     parent.appendChild(root);
 }
