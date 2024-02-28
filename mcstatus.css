@@ -4,7 +4,7 @@
 
 .mc-status-root {
     display: inline-block;
-    background-color: #13171f;
+    background-color: transparent;
     color: #bebebe;
 
     border-style: solid;
@@ -26,7 +26,7 @@
     white-space: pre;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    background-color: #1c1f25;
+    background-color: transparent;
     color: #bebebe; 
 
     width: 53ch;
@@ -43,7 +43,7 @@
 
 .mc-description-obfuscated {
     color: #ffffff;
-    background-color: #15171f;
+    background-color: transparent;
 }
 
 .mc-description-strikethrough {
